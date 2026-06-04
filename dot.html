@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wowo Luxury Estate</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#222;
+}
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(255,255,255,0.9);
+    backdrop-filter:blur(10px);
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    font-size:1.6rem;
+    font-weight:700;
+    color:#0f172a;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+.btn-nav{
+    background:#2563eb;
+    color:white;
+    padding:10px 20px;
+    border-radius:10px;
+    text-decoration:none;
+}
+
+.hero{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:800px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.1rem;
+    margin-bottom:30px;
+}
+
+.hero-btn{
+    display:inline-block;
+    background:#2563eb;
+    padding:15px 35px;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:600;
+}
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:100px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2.5rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.price{
+    color:#2563eb;
+    font-size:1.5rem;
+    font-weight:700;
+}
+
+.location{
+    color:#777;
+    margin:10px 0;
+}
+
+.spec{
+    display:flex;
+    justify-content:space-between;
+    margin-top:15px;
+    color:#555;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.about p{
+    color:#666;
+    line-height:1.8;
+}
+
+.contact{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.contact h2{
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.contact button{
+    margin-top:20px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    padding:15px 35px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:1rem;
+}
+
+footer{
+    background:#08101f;
+    color:#aaa;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.about{
+    grid-template-columns:1fr;
+}
+
+nav ul{
+    display:none;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo"> Wowo Luxury Estate</div>
+
+<ul>
+<li><a href="#">Beranda</a></li>
+<li><a href="#">Properti</a></li>
+<li><a href="#">Tentang</a></li>
+<li><a href="#">Kontak</a></li>
+</ul>
+
+<a href="#" class="btn-nav">Hubungi Kami ⟩</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Temukan Rumah Impian Anda</h1>
+<p>Properti premium dengan desain modern, lokasi strategis, dan investasi masa depan yang menjanjikan.</p>
+<a href="#" class="hero-btn">Lihat Properti</a>
+</div>
+</section>
+
+<section class="section">
+
+<div class="section-title">
+<h2>Properti Unggulan</h2>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be">
+<div class="card-content">
+<div class="price">Rp 2,8 Miliar</div>
+<div class="location">Jakarta Selatan</div>
+<div class="spec">
+<span>4 Kamar</span>
+<span>3 Kamar Mandi</span>
+<span>250 m²</span>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be">
+<div class="card-content">
+<div class="price">Rp 3,5 Miliar</div>
+<div class="location">Bandung</div>
+<div class="spec">
+<span>5 Kamar</span>
+<span>4 Kamar Mandi</span>
+<span>320 m²</span>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+<div class="card-content">
+<div class="price">Rp 4,1 Miliar</div>
+<div class="location">Surabaya</div>
+<div class="spec">
+<span>6 Kamar</span>
+<span>4 Kamar Mandi</span>
+<span>400 m²</span>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750">
+
+<div>
+<h2>Mengapa Memilih Kami?</h2>
+<p>
+Kami menyediakan properti terbaik dengan proses pembelian yang aman, cepat, dan transparan.
+Tim profesional kami siap membantu menemukan rumah yang sesuai kebutuhan Anda.
+</p>
+</div>
+
+</div>
+</section>
+
+<section class="contact">
+<h2>Konsultasi Gratis</h2>
+<p>Dapatkan penawaran terbaik untuk rumah impian Anda.</p>
+<button>Hubungi Sekarang</button>
+</section>
+
+<footer>
+© 2026 Yves. All Rights Reserved.
+</footer>
+
+</body>
+</html>
